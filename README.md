@@ -28,7 +28,7 @@ Now run the docker - in this case the image was called python-zpf:latest
 ```
 sudo docker run -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY -h $HOSTNAME \
-    -v $HOME/.Xauthority:/home/lyonn/.Xauthority \
+    -v $HOME/.Xauthority:/$HOME/.Xauthority \
     -it --rm --device /dev/snd python-zpf1:latest
 ```
 
